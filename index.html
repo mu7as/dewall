@@ -1,0 +1,353 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="description" content="">
+		<meta name="keywords" content=""/>
+		<meta name="robots" content="index, follow" />
+		<!-- IE Compatibility Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<!-- First Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Dewall </title>
+		<link rel="shortcut icon" type="image/x-icon" href="source/Images/earth-world-globe-map-planet-transparent-image-117825.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/styleAll.css">
+		<!-- [if it IE9]>
+			<script src="javaScript/html5shiv.min.js"></script>
+			<script src="javaScript/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			main h1 {color: #009414; text-align: center;}
+			main h2 {color: #02b8ff;}
+			main h5 {color: #dc0a3e;}
+			main ul {
+				border-right: solid #ff4c5f;
+				margin-right: 15px;
+				padding-right: 25px
+			}
+
+			main .container {
+				width:100%;
+				height: 300px;
+				color: white;
+				position: relative;
+				z-index: 1;
+				padding: 10px
+			}
+			main .container .bars {
+				position: absolute;
+				top: 0; left: 0;
+				height: 100%;
+				width: 100%;
+			}
+			main .container .bars {
+				padding: 20px
+			}
+			main .container .bars .bar {
+				width: 100%;
+				height: auto;
+				margin-top: 10px;
+				overflow: hidden;
+			}
+			main .container .bars .a {
+				background: #ff7c00;
+			}
+			main .container .bars .b {
+				background: #02b8ff
+			}
+			main .container .bars .c {
+				background: #fdc200
+			}
+			main .container .bars .d {
+				background: #9121ff
+			}
+			main .container .bars .e {
+				background: #00ce00
+			}
+			main .container .bars .bar p {
+				margin-bottom: 0px;
+				width: 50%;
+				float: right;
+				direction: rtl;
+				padding: 8px;
+				padding-right: 20px;
+				font-weight: bolder;
+				text-shadow: 3px 3px 3px #000 
+			}
+			main .container .bars .bar p:last-of-type {
+				float: left;
+				direction: ltr;
+				padding-right: 8px;
+				padding-left: 20px 
+			}
+			main .container .bars .bar p span:hover {
+				cursor: pointer;
+				color: red;
+				text-shadow: -3px -3px 3px #000;
+				transition: 0.5s
+			}
+			main .container .bars .mob-c {
+				background: #222;
+				text-align: center;
+				font-size: 30px;
+				display: none
+			}
+			main .container .circles {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				margin-left: calc(50% - 100px);
+				height: 100%;
+				width: 200px;
+			}
+			main .container .circles .circle {
+				margin-top: 18px;
+				width: 240px;
+				height: 240px;
+				background: #fefefe;
+				border-radius: 100%;
+			}
+			main .container .circles .small {
+				position: relative;
+			}
+			main .container .circles .small h1 {
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+				padding: 60px;
+				text-align: center;
+				font-size: 40px;
+			}
+			main .container .circles .big {
+				background: #e7e7e7;
+				position: absolute;
+				top: -32; left: -15;
+				width: calc(100% + 30px);
+				height: calc(100% + 30px);
+				opacity: 0.5
+			}
+			@media(max-width: 630px) {
+				main .container .circles .circle {
+					margin-top: 65px;
+					width: 150px;
+					height: 150px;
+				}
+				main .container .circles .small h1 {
+					font-size: medium;
+				}
+				main .container .circles .big {
+					top: -80; left: -15;
+					width: calc(100% + 30px);
+					height: calc(100% + 30px);
+				}
+			}
+			@media(max-width: 555px) {
+				main .container .circles {
+					margin-left: calc(50% - 120px);
+				}
+			}
+			@media(max-width: 480px) {
+				main .container {
+					height: 350px;
+				}
+				main .container .bars {
+					padding: 0px
+				}
+				main .container .circles {
+					display: none
+				}
+				main .container .bars .mob-c{
+					display: block;
+				}
+			}
+			@media(max-width: 317px) {
+				main .container {
+					height: 400px
+				}
+			}
+			@media(max-width: 270px) {
+				main .container {
+					height: 450px
+				}
+			}
+			@media(max-width: 233px) {
+				main .container {
+					height: 500px
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--- HEADER ------------------------------------------------------>
+
+		<header>
+			<figure>
+				<img src="source/gifs/giphy%20(3).gif">
+				<figcaption>Dewall</figcaption>
+			</figure>
+		</header>
+
+		<!--- NAV ------------------------------------------------------>
+		
+		<nav>
+
+			<ul>
+				<a href="index.html"><li class="home">الصفحه الرئيسيه</li></a>
+				<a href="continents.html"><li>القارات</li></a>
+				<a href="worldCapitals.html"><li>عواصم العالم</li></a>
+				<a href="worldFlags.html"><li>اعلام العالم</li></a>
+				<a href="worldCoins.html"><li>عملات العالم</li></a>
+				<a href="callingCodes.html"><li>رموز الاتصال</li></a>
+				<li class="mobB navB">القائمه</li></a>
+				<li class="mobB menuB"> الأقسام</li></a>
+			</ul>
+
+    	</nav>
+
+    	<div class="mobNav">
+    		<ul>
+				<a href="index.html"><li>الصفحه الرئيسيه</li></a>
+				<a href="continents.html"><li>القارات</li></a>
+				<a href="worldCapitals.html"><li>عواصم العالم</li></a>
+				<a href="worldFlags.html"><li>اعلام العالم</li></a>
+				<a href="worldCoins.html"><li>عملات العالم</li></a>
+				<a href="callingCodes.html"><li>رموز الاتصال</li></a>
+			</ul>
+    	</div>
+    
+    	<!--- ASIDE ------------------------------------------------------>
+
+    	<aside>
+			<ul>
+				<a href="howManyCountries.html"><li>كم عدد الدول؟</li></a>
+				<a href="countriesOfTheWorld.html"><li>دول العالم </li></a>
+					<li class="label">الدول حسب القاره</li>
+				<a href="countriesOfEurope.html"><li>دول اوروبا</li></a>
+				<a href="countriesOfAsia.html"><li>دول اسيا</li></a>
+				<a href="countriesOfAfrica.html"><li>دول افريقيا</li></a>
+				<a href="countriesOfNorthAmerica.html"><li>دول أمريكا الشماليه</li></a>
+				<a href="countriesOfSouthAmerica.html"><li>دول أمريكا الجنوبيه</li></a>
+				<a href="countriesOfAustraliaAndOceania.html"><li>دول أستراليا وأوقيانوسيا</li></a>
+					<li class="label">اتحاد الدول</li>
+				<a href="europeanUnionCountries.html"><li>دول الاتحاد الأوروبي</li></a>
+					<li class="label">احصائيات العالم</li>
+				<a href="world'sLargestCountries.html"><li>أكبر دول العالم</li></a>
+				<a href="world'sSmallestCountries.html"><li>أصغر دول العالم</li></a>
+				<a href="mostPopulousCountries.html"><li>الدول الأكثر ازدحاما</li></a>
+				<a href="richestCountries.html"><li>أغني دول العالم</li></a>
+				<a href="mostTradedCurrencies.html"><li>العملات الأكثر تداولا</li></a>
+			</ul>
+		</aside>
+
+		<div class="mobAside">
+			<ul>
+				<a href="howManyCountries.html"><li>كم عدد الدول؟</li></a>
+				<a href="countriesOfTheWorld.html"><li>دول العالم </li></a>
+					<li class="label">الدول حسب القاره</li>
+				<a href="countriesOfEurope.html"><li>دول اوروبا</li></a>
+				<a href="countriesOfAsia.html"><li>دول اسيا</li></a>
+				<a href="countriesOfAfrica.html"><li>دول افريقيا</li></a>
+				<a href="countriesOfNorthAmerica.html"><li>دول أمريكا الشماليه</li></a>
+				<a href="countriesOfSouthAmerica.html"><li>دول أمريكا الجنوبيه</li></a>
+				<a href="countriesOfAustraliaAndOceania.html"><li>دول أستراليا وأوقيانوسيا</li></a>
+					<li class="label">اتحاد الدول</li>
+				<a href="europeanUnionCountries.html"><li>دول الاتحاد الأوروبي</li></a>
+					<li class="label">احصائيات العالم</li>
+				<a href="world'sLargestCountries.html"><li>أكبر دول العالم</li></a>
+				<a href="world'sSmallestCountries.html"><li>أصغر دول العالم</li></a>
+				<a href="mostPopulousCountries.html"><li>الدول الأكثر ازدحاما</li></a>
+				<a href="richestCountries.html"><li>أغني دول العالم</li></a>
+				<a href="mostTradedCurrencies.html"><li>العملات الأكثر تداولا</li></a>
+			</ul>
+		</div>
+
+		<!--- MAIN ------------------------------------------------------ -->
+
+		<main>
+			
+
+			<h1>دول العالم كدول مستقلة</h1>
+			<h2>ما هي الدوله كدوله مستقله نظريا وعمليا؟</h2>
+			<p>
+				<span>
+				حاليا هناك نوعان من النظريات المثيره للجدل حول الدول.
+				</span>
+				تقول النظريه التأسيسيه انه فقط اذا تم الاعتراف بالكيان الذي يدعي انه دوله من قبل دول اخري ذات سياده فان هذا الكيان يعتبر دوله  وتدعي النظريه التقريريه انه لاتحتاج اي دوله الي الاعتراف الرسمي.
+			
+				وفي الواقع السياسي الحالي, هناك العديد من الاستثناءات من كلتا النظريتين.
+			</p>
+			
+			<h5>في الممارسة العملية ، يجب أن يكون لدى أي دولة مستقلة ما يلي:</h5>
+			<ul>
+				<li>إقليم خاص به حدود محددة بوضوح.</li>
+				<li>السكان الدائمون.</li>
+				<li>حكومة وسلطات قانونية أخرى.</li>
+				<li>السيادة (القدرة على أن تكون مستقلة عن الآخرين وأن تكون لها سيطرة مطلقة على أراضيها وأن تحكمها وتحميها من القوى الخارجية وتنفذ القوانين وتجمع الضرائب).</li>
+				<li>القدرة على الحفاظ على العلاقات الخارجية.</li>
+			</ul>
+			
+			<h2>ما هي الاشياء الأساسيه التي تحتاجها كل دوله؟</h2>
+
+			<p> 
+				هناك بعض الأمور الأساسية اللازمة لكل دولة مستقلة ، والتي تساعد على الاختلاف عن الآخرين: العلم الوطني ، النشيد الوطني ، شعار النبالة ، عاصمة المدينة ، جواز سفر المواطن ، اللغة الرسمية (أو اللغات) ، العملة الرسمية ، رمز الدعوة الدولية ، مجال البلد. تحدد هذه الصفات الفردية للأمة ، وجعلها معروفة في جميع أنحاء العالم وتستخدم على نطاق واسع في الحياة الحقيقية.
+			</p>
+
+			<div class="container">
+				<div class="bars">
+					<div class="bar mob-c">
+						كل 
+دوله 
+لديها
+					</div>
+					<div class="bar a">
+						<p><span>جواز سفر وطني  </span></p>
+						<p><span>العلم الوطني </span></p>
+					</div>
+					<div class="bar b">
+						<p><span>العاصمه </span></p>
+						<p><span>شعار النباله </span></p>
+					</div>
+					<div class="bar c">
+						<p><span>مفاتيح الاتصال </span></p>
+						<p><span>النشيد الوطني </span></p>
+					</div>
+					<div class="bar d">
+						<p><span>مجال البلد </span></p>
+						<p><span>كود الأيزو </span></p>
+					</div>
+					<div class="bar e">
+						<p><span>العمله الرسميه </span></p>
+						<p><span>اللغه الرسميه </span></p>
+					</div>
+				</div>
+
+				<div class="circles">
+						<div class="circle small">
+							<h1>
+								كل 
+دوله 
+لديها
+							</h1>
+							<div class="circle big">
+								
+							</div>
+						</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer>
+			<p> &copy 2018, www.dewall.com </p>
+		</footer>
+
+		<div class="clearfix"></div>
+		<!-- ********************************************************* -->
+		<script src="javascript/jQueryv3.3.1.js"></script>
+		<script src="javascript/script.js"></script>
+		<!-- ********************************************************* -->
+	</body>
+</html>
