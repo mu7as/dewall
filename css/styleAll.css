@@ -1,0 +1,369 @@
+/*---GLOBAL ---------------------*/
+*{
+	padding: 0px;
+	margin: 0px
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family:'century gothic', calibri, arial;
+	margin: 0 auto;
+}
+.clearfix {
+	clear:both
+}
+
+/*--- HEADER ---------------------*/
+header {
+	display:inline-block;
+	width: 100%;
+	height: 180px;
+	background: #121212;
+	background-image: url("https://scontent-cai1-1.xx.fbcdn.net/v/t1.15752-9/48365769_371321560285623_887967175434829824_n.jpg?_nc_cat=106&_nc_ht=scontent-cai1-1.xx&oh=b49f0dcb29a40044824b08fd96db7ac9&oe=5CAA1236");
+	overflow: hidden;
+	position: relative;
+}
+header figure {
+	background: none;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px black;
+	width: 150px;
+	height: 150px;
+	margin: 15px 0 0 100px;
+}
+header figure img {
+	width: 100%;
+	height: 100%
+}
+header figure figcaption {
+	letter-spacing: 10px;
+	font-size: 40px;
+	font-weight: bolder;
+	font-family: broadway;
+	color: white;
+	text-shadow: 5px 2px black;
+	margin: -100px 0 0 -25px
+}
+
+@media(max-width: 350px) {
+	header figure {
+		width: 120px;
+		height: 120px;
+		margin: 30px auto;
+	}
+	header figure figcaption {
+		letter-spacing: 10px;
+		font-size: 30px;
+		font-weight: bolder;
+		margin: -70px auto;
+		margin-left: -20px
+	}
+}
+/* ------- NAVIGATION ------------- */
+nav {
+	display: inline-block;
+	background: #076fff;
+	height: 40px;
+	width: 100%;
+	direction: rtl;
+}
+nav ul {
+	padding-right: 50px 
+}
+nav ul li{
+	display: inline-block;
+	margin-right:0;
+	color: white;
+	padding: 10px;
+	width: 115px;
+	text-align:center
+}
+nav ul li:hover {
+	cursor:pointer;
+	background:#c8e856;
+	font-weight:bolder
+}
+nav ul a {
+	text-decoration:none;
+	color:white
+}
+/* ------- MOBILE NAVIGATION --- */
+nav ul .mobB {
+	display: none
+}
+.mobNav {
+	background: #076fff;
+	display: none
+}
+.mobNav ul {
+	width: 100%
+}
+.mobNav ul a {
+	text-decoration: none;
+	color: #fefefe
+}
+.mobNav ul li {
+	display:block;
+	margin-right:0;
+	color:white;
+	padding:10px;
+	width:100%;
+	text-align:center;
+	border-bottom: solid 1px #fefefe
+}
+.mobNav ul li:first-of-type{
+	border-top: solid 1px #fefefe
+}
+.mobNav ul li:hover {
+	cursor:pointer;
+	background:#c8e856;
+	font-weight:bolder
+}
+
+@media(max-width: 840px) {
+	nav ul {
+		padding-right: 0px 
+	}
+	nav ul li {display: none}
+	nav ul .mobB {
+		display: inline-block;
+		width: 50%;
+		padding: 10px 0px
+	}
+	nav ul .navB {
+		float: right;
+	}
+	nav ul .menuB {
+		float: left
+	}
+}
+@media(min-width: 840px) {
+	.mobNav {
+		display: none !important;
+	}
+}
+
+/*-------- GOUP -------------- */
+
+#goup {
+	background: #076fff;
+	color: #fefefe;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 500;
+	bottom: 20px;
+	right: -70px;
+	transition: 0.5s;
+	box-shadow: 5px 5px 15px 0px #000;
+	text-shadow: 2px 2px 2px #000
+}
+#goup:hover {
+	color: #000;
+	background: red;
+	font-weight: bolder;
+}
+
+/* ------- ASIDE ------------- */
+	
+aside {
+	float:right;
+	width:15%;
+	height:auto;
+	direction:rtl;
+	overflow:hidden;
+}
+aside ul {
+	list-style-type: none;
+}
+aside ul li {
+	border-bottom: dotted 1px;
+	height: auto;
+	padding: 5px 20px 5px 5px;
+	color: #0750ff;
+	font-weight: bolder
+}
+aside ul li:hover {
+	background: #eaffe0;
+	cursor: pointer;
+	color: #dc0a21;
+	border-bottom-color: black
+}
+aside ul a {
+	text-decoration: none;
+	color: #0750ff;
+}
+aside ul .label {
+	color: black;
+	border-bottom: solid #c8e856;
+	padding-top: 10px
+}
+aside ul .label:hover {
+	background: none;
+	cursor: auto;
+	color: black;
+	border-bottom: solid #c8e856;
+}
+/* ------- MOBILE ASIDE --- */
+.mobAside {
+	width:100%;
+	height:auto;
+	direction:rtl;
+	display: none
+}
+.mobAside ul {
+	list-style-type: none;
+	text-align: center;
+}
+.mobAside ul li {
+	border-bottom: dotted 1px;
+	height: 30px;
+	padding: 5px 20px 5px 5px;
+	color: #0750ff;
+	font-weight: bolder
+}
+.mobAside ul li:hover {
+	background: #eaffe0;
+	cursor: pointer;
+	color: #dc0a21;
+	border-bottom-color: black
+}
+.mobAside ul a {
+	text-decoration: none;
+	color: #0750ff;
+}
+.mobAside ul .label {
+	color: black;
+	border-bottom: solid #c8e856;
+	padding-top: 10px
+}
+.mobAside ul .label:hover {
+	background: none;
+	cursor: auto;
+	color: black;
+	border-bottom: solid #c8e856;
+}
+
+@media(max-width: 840px) {
+	aside {
+		display: none
+	}
+}
+@media(min-width: 840px) {
+	.mobAside {
+		display: none !important
+	}
+}
+
+/* ------- MAIN ------------- */
+
+main {
+	float: right;
+	width: 85%;
+	direction: rtl;
+	padding: 20px
+}
+main h1, h2, h3, h4, h5, p, ul, table { 
+	margin-bottom: 10px
+}
+
+@media(max-width: 840px){
+	main {
+		float: none;
+		width: 100%
+	}
+}
+
+/*------- MAIN/SELECTBOX -------------*/
+main .selectBox {
+	border-right: solid orange;
+	padding:3.5 10 3.5 15;
+	margin:0 10 5 0;
+	display:inline-block;
+	background:gray;
+	width: auto
+}
+main .selectBox select {
+	font-size:17;
+	padding:5;
+	box-shadow:3px 3px 3px black;
+	margin-bottom: 5px
+}
+main .selectBox #go {
+	margin-bottom: 5px
+}
+main .selectBox a {
+	display:inline-block;
+	background:#c8e856;
+	padding:5;
+	cursor:pointer;
+	border-radius:5%;
+	box-shadow:3px 3px 3px black;
+	text-decoration:none;
+}
+main .selectBox a:hover {
+	background:#00cd00;
+	color:white;
+	font-weight:bolder
+} 
+main .selectBox a:active {
+	box-shadow:3px 3px 3px black inset
+}
+@media(max-width: 243px){
+	main .selectBox select{
+		width: 100%;
+		margin-bottom: 5px
+	}
+	main .selectBox #go {
+		width: 100%;
+		margin-bottom: 5px
+	}
+}
+
+/*-- TABLE ---------------------*/
+main div table {
+	width: 100%;
+	display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background: grey;
+}
+main div table tr th {
+	background:#e7fbcd;
+	padding:10;
+	text-align: center;
+}
+main div table tr td {
+	background:#f9f9f9;
+	padding:10;
+	text-align: center;
+}
+main div table tr td:first-of-type {
+	color:#004997
+}
+main div table tr td:last-of-type {
+	color:#e80028
+}
+main div table tr td[name="Az"] {
+	background: #e6eae8;
+	text-align: right;
+	font-size: 30px;
+	color: green
+}
+
+/* ------- FOOTER ------------- */
+
+footer {
+	display:inline-block;
+	width:100%;
+	height:100;
+	padding:15 0 0 15;
+	border-top:solid #d1d1d1;
+	margin-top:50
+}
